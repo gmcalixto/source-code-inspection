@@ -58,7 +58,7 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+            for (int i = 6; i >= 0; i--) { /** Loop infinito, porque i estava sendo incrementado */
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
