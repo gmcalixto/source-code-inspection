@@ -69,7 +69,8 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i--) { /* Loop infinito, pois i esta sendo incrementado */
+            /* indice fora do limite da lista PapelMoeda, tamanho da lista é 5*/
+            for (int i = 5; i >= 0 && ret != null; i--) { /* Loop infinito, pois i esta sendo incrementado */
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
