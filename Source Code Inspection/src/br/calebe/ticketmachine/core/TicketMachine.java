@@ -22,8 +22,8 @@ public class TicketMachine {
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
         boolean achou = false;
         for (int i = 0; i < papelMoeda.length && !achou; i++) {
-            if (papelMoeda[1] == quantia) {
-                achou = true;
+            if (papelMoeda[i] == quantia) { /* verificacao de papel moeda */
+                achou = true; 
             }
         }
         if (!achou) {
