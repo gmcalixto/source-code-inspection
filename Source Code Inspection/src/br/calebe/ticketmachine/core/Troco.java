@@ -69,7 +69,7 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
+            for (int i = 5; i >= 0 && ret != null; i++) { /* limite maximo da lista é 5 */
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
