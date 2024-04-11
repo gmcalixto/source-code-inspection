@@ -4,6 +4,7 @@ import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
 import java.util.Iterator;
 
+
 /**
  *
  * @author Calebe de Paula Bianchini
@@ -37,8 +38,18 @@ public class TicketMachine {
     }
 
     public Iterator<Integer> getTroco() {
-        return null;
-    }
+        List<Integer> notasTroco = new ArrayList<>();
+        int[] notasDisponiveis = {100, 50, 20, 10, 5, 2}; // Valores das notas disponíveis em ordem decrescente
+
+        for (int nota : notasDisponiveis) {
+            while (troco >= nota) {
+                notasTroco.add(nota);
+                troco -= nota;
+            }
+        }
+
+        return notasTroco.iterator();
+    }   
 
     public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
