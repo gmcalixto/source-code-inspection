@@ -19,11 +19,15 @@ class Troco {
             valor = valor - 100
             count++;
 
+
         }
         papeisMoeda[5] = new PapelMoeda(100, count);
         count = 0;
-        while (valor % 50 != 0 ) {
-            
+
+
+        //pegar moeda 50
+        while (alor >=50 ) {
+            valor = valor - 50
             count++;
         }
         papeisMoeda[4] = new PapelMoeda(50, count);
