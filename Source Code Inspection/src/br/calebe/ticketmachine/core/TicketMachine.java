@@ -40,7 +40,7 @@ public class TicketMachine {
         return null;
     }
 
-     public String imprimir() throws SaldoInsuficienteException {
+    public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
             throw new SaldoInsuficienteException();
         }
