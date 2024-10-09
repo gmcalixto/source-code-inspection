@@ -23,7 +23,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 |-----------------------|------------------------------------|
 | **Nome**              | Inserir dinheiro                   |
 | **Atores**            | Cliente                            |
-| **Sumário**           | Uma quantia de dinheiro é inserida na máquina. É importante ressaltar que essa quantia sempre é representada por uma única nota de papel-moeda. |
+| **Sumário**           | Uma quantia de dinheiro é inserida na máquina. |
 | **Complexidade**      | Médio                              |
 | **Regras de Negócio** | N/D                                |
 | **Pré-condições**     | N/D                                |
