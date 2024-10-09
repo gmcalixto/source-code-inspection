@@ -13,6 +13,8 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
             
 ## 1.2 Diagrama dos Casos de Uso
 
+![Diagrama de caso de uso](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_caso_de_uso.png)
+
 ## 1.3 Especificação dos Casos de Uso
 
 ### 1.3.1 CSU01 – Inserir dinheiro
@@ -102,11 +104,15 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
   <img src="" alt="Diagrama de Classes Principal" width="25%">
 </p>
 
+![Diagrama de classes principal](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_de_classes_principal.png)
+
 ## 2.2 Diagrama de Classes de interação
 
 <p align="center"> 
   <img src="" alt="Diagrama de Classes de interação" width="25%">
 </p>
+
+![Diagrama de classes interação](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_de_classes_interacao.png)
 
 ## 2.3 Diagrama de Sequência – Inserir dinheiro
 
@@ -114,17 +120,24 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
   <img src="" alt="Diagrama de Sequência – Inserir dinheiro" width="25%">
 </p>
 
+![Diagrama de sequência - inserir dinheiro](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_de_sequencia_inserir_dinheiro.png)
+
 ## 2.4 Diagrama de Sequência – Solicitar bilhete
 
 <p align="center"> 
   <img src="" alt="Diagrama de Sequência – Solicitar bilhete" width="25%">
 </p>
 
+![Diagrama de sequência solicitar bilhete](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_de_sequencia_solicitar_bilhete.png)
+
+
 ## 2.5 Diagrama de Sequência – Solicitar troco
 
 <p align="center"> 
   <img src="" alt="Diagrama de Sequência – Solicitar troco" width="25%">
 </p>
+
+![Diagrama de sequência solicitar troco](https://github.com/PurgamentumSolis/Source-Code-Inspection/blob/master/img/diagrama_de_sequencia_solicitar_troco.png)
 
 É importante salientar que estes diagramas representam apenas o fluxo principal dos casos
 de uso.
