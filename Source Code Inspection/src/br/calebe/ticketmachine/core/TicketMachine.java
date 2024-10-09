@@ -2,7 +2,10 @@ package br.calebe.ticketmachine.core;
 
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
+
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  *
@@ -36,9 +39,21 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
+public Iterator<Integer> getTroco() {
+    int troco = saldo;
+    List<Integer> trocoList = new ArrayList<>();
+
+    for (int i = papelMoeda.length - 1; i >= 0; i--) {
+        while (troco >= papelMoeda[i]) {
+            trocoList.add(papelMoeda[i]);// notes: seria bom fazer a verificação se o papelMoeda está em "estoque" na máquina
+            troco -= papelMoeda[i];
+        }
     }
+
+    saldo = 0;// nas especificações estava pedindo para zerar o saldo
+
+    return trocoList.iterator();
+}
 
     public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
