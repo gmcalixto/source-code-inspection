@@ -2,7 +2,7 @@
 
 # 1  Requisitos
 
-As estações de trem frequentemente fornecem máquinas de vender bilhetes que imprimem um bilhete quando um cliente insere a quantia correta para pagar a passagem e caso seja inserido um valor maior o usuário pode solicitar o troco. As máquinas mantêm uma soma total da quantidade de dinheiro que coletou durante toda sua operação
+As estações de trem frequentemente fornecem máquinas de vender bilhetes que imprimem um bilhete quando um cliente insere a quantia correta para pagar a passagem e caso seja inserido um valor maior o usuário pode solicitar o troco. As máquinas mantêm uma soma total da quantidade de dinheiro que coletou durante toda sua operação (sessão por usuário).
 
 ## 1.1 Catálogo dos Atores
 
