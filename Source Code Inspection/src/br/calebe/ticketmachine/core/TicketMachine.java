@@ -37,7 +37,18 @@ public class TicketMachine {
     }
 
     public Iterator<Integer> getTroco() {
-        return null;
+        int troco = saldo - valor;
+        List<Integer> listaTroco = new ArrayList<>();
+        
+        for (int i = papelMoeda.length - 1; i >= 0; i--) {
+        while (troco >= papelMoeda[i]) {
+            listaTroco.add(papelMoeda[i]);
+            troco -= papelMoeda[i];
+        }
+    }
+
+    saldo = 0;
+    return listaTroco.iterator()
     }
 
     public String imprimir() throws SaldoInsuficienteException {
