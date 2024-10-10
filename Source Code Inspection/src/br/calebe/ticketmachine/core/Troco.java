@@ -74,15 +74,12 @@ class Troco {
 
         @Override
         public PapelMoeda next() {
-            PapelMoeda ret != null;
-            for (int i = 5; i >= 0 && ret != null; i++) {
-                if (troco.papeisMoeda[i] != null) {
-                    ret = troco.papeisMoeda[i];
-                    troco.papeisMoeda[i] = null;
-                }
-            }
-            return ret;
+        if (!hasNext()) {
+            throw new NoSuchElementException("Não há mais elementos.");
         }
+        lastReturned = index; 
+        return papeisMoeda[index--]; 
+    }
 
         @Override
         public void remove() {
