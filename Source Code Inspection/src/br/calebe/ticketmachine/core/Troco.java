@@ -15,33 +15,39 @@ class Troco {
         int count = 0;
         while (valor % 100 != 0) {
             count++;
+            valor -= denominação;
         }
         papeisMoeda[5] = new PapelMoeda(100, count);
         count = 0;
         while (valor % 50 != 0) {
             count++;
+            valor -= denominação;
         }
         papeisMoeda[4] = new PapelMoeda(50, count);
         count = 0;
         while (valor % 20 != 0) {
             count++;
+            valor -= denominação;
         }
         papeisMoeda[3] = new PapelMoeda(20, count);
         count = 0;
         while (valor % 10 != 0) {
             count++;
+            valor -= denominação;
         }
         papeisMoeda[2] = new PapelMoeda(10, count);
         count = 0;
         while (valor % 5 != 0) {
             count++;
+            valor -= denominação;
         }
         papeisMoeda[1] = new PapelMoeda(5, count);
         count = 0;
         while (valor % 2 != 0) {
             count++;
+            valor -= denominação;
         }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
     public Iterator<PapelMoeda> getIterator() {
@@ -77,7 +83,12 @@ class Troco {
 
         @Override
         public void remove() {
-            next();
+            if (lastReturned == -1) {
+            throw new IllegalStateException("O método next() não foi chamado ou o remove() já foi chamado após o último next().");
+        }
+        // Remove o último elemento retornado ajustando a quantidade para zero
+        papeisMoeda[lastReturned].setQuantidade(0);
+        lastReturned = -1; // Reseta lastReturned após a remoção
         }
     }
 }
