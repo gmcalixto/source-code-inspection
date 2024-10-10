@@ -10,7 +10,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 
 ## 1.2 Diagrama dos Casos de Uso
 
-![Diagrama dos Casos de Uso](images/diagcasos1.2.png.png)
+![Diagrama dos Casos de Uso](images/diagcasos1.2.png)
 
 ## 1.3 Especificação dos Casos de Uso
 
