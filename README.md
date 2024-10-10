@@ -15,6 +15,8 @@ Este projeto simula uma máquina de vender bilhetes de transporte público, que 
 
 ### 2. Casos de Uso
 
+![Diagrama de casos de uso](img/Casos_de_uso.png)
+
 #### CSU01 - Inserir Dinheiro
 - **Ator**: Cliente
 - **Descrição**: O cliente insere uma nota de papel-moeda na máquina.
@@ -50,10 +52,21 @@ Este projeto simula uma máquina de vender bilhetes de transporte público, que 
 ## Projeto Orientado a Objetos
 
 ### Diagrama de Classes Principal
-O projeto utiliza um diagrama de classes que modela os principais componentes e suas interações.
+![Diagrama de classes principais](img/Diagrama_de_classe_principal.png)
+
+### Diagrama de Classes de Interação
+![Diagrama de classes de interação](img/Diagrama_de_classe_Iteracao.png)
 
 ### Diagramas de Sequência
 Foram criados diagramas de sequência para os seguintes casos de uso:
-- **Inserir Dinheiro**
-- **Solicitar Bilhete**
+
+- **Inserir Dinheiro**<br>
+![Diagrama de sequencia de inserir dinheiro](img/Diagrama_de_sequencia_inserir_dinheiro.png)
+
+
+- **Solicitar Bilhete**<br>
+![Diagrama de sequencia de solicitar bilhete](img/Diagrama_de_sequencia_solicitar_bilhete.png)
+
+
 - **Solicitar Troco**
+![Diagrama de sequencia de solicitar troco](img/Diagrama_de_sequencia_solicitar_troco.png)
