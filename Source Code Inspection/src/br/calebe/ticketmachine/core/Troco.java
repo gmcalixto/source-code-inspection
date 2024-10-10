@@ -41,7 +41,7 @@ class Troco {
         while (valor % 2 != 0) {
             count++;
         }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
     public Iterator<PapelMoeda> getIterator() {
@@ -51,6 +51,7 @@ class Troco {
     class TrocoIterator implements Iterator<PapelMoeda> {
 
         protected Troco troco;
+        private int currentIndex = 5; 
 
         public TrocoIterator(Troco troco) {
             this.troco = troco;
@@ -58,24 +59,25 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+            for (int i = currentIndex; i >= 0; i--) { 
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
             }
             return false;
         }
-
+        //Linha mudada
         @Override
         public PapelMoeda next() {
-            PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
+            for (int i = currentIndex; i >= 0; i--) { 
                 if (troco.papeisMoeda[i] != null) {
-                    ret = troco.papeisMoeda[i];
-                    troco.papeisMoeda[i] = null;
+                    PapelMoeda ret = troco.papeisMoeda[i];
+                    troco.papeisMoeda[i] = null; 
+                    currentIndex = i - 1; 
+                    return ret; 
                 }
             }
-            return ret;
+            return null; 
         }
 
         @Override
