@@ -80,7 +80,12 @@ class Troco {
 
         @Override
         public void remove() {
-            next();
+            if (lastReturned == -1) {
+            throw new IllegalStateException("O método next() não foi chamado ou o remove() já foi chamado após o último next().");
+        }
+        // Remove o último elemento retornado ajustando a quantidade para zero
+        papeisMoeda[lastReturned].setQuantidade(0);
+        lastReturned = -1; // Reseta lastReturned após a remoção
         }
     }
 }
