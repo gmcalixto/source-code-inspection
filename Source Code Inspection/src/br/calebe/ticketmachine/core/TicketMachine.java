@@ -36,6 +36,11 @@ public class TicketMachine {
         return saldo;
     }
 
+    public void solicitarBilhete() {
+        this.imprimir();
+        return this.getTroco();
+    }
+
     public Iterator<Integer> getTroco() {
         return null;
     }
