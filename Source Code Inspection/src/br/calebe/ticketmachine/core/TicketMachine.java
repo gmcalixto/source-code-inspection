@@ -2,6 +2,7 @@ package br.calebe.ticketmachine.core;
 
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
+import java.util.Iterator;
 
 /**
  *
@@ -35,6 +36,11 @@ public class TicketMachine {
         return saldo;
     }
 
+    public Iterator<PapelMoeda> getTroco() {
+        Troco troco = new Troco(valor);
+        return troco.getIterator();
+    }
+    
     public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
             throw new SaldoInsuficienteException();
