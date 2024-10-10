@@ -22,6 +22,7 @@ public class TicketMachine {
    public void inserir(int valor) throws PapelMoedaInvalidaException {
     if (valor != 2 && valor != 5 && valor != 10 && valor != 20 && valor != 50 && valor != 100) {
         throw new PapelMoedaInvalidaException("Nota inválida inserida.");
+
     }
     this.saldo += valor;
 }
@@ -30,8 +31,8 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
+    public Troco getTroco() {
+        return new Troco(saldo);
     }
 
     public String imprimir() throws SaldoInsuficienteException {
