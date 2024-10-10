@@ -11,7 +11,7 @@ class Troco {
     protected PapelMoeda[] papeisMoeda;
 
     public Troco(int valor) {
-        papeisMoeda = new PapelMoeda[6];
+        this.papeisMoeda = new PapelMoeda[6];
         int count = 0;
         while (valor % 100 != 0) {
             count++;
