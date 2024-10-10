@@ -56,6 +56,11 @@ class Troco {
                 totalTroco += papeisMoeda[i].getQuantidade() * papeisMoeda[i].getValor();
             }
         }
+
+        String result = "*****************\n";
+        result += "*** R$ " + saldo + ",00 ****\n";
+        result += "*****************\n";
+        System.out.println(result);
         
         return totalTroco;
     }
