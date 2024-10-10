@@ -41,12 +41,12 @@ public class TicketMachine {
     }
 
     public String imprimir() throws SaldoInsuficienteException {
-        if (saldo < valor) {
-            throw new SaldoInsuficienteException();
-        }
-        String result = "*****************\n";
-        result += "*** R$ " + saldo + ",00 ****\n";
-        result += "*****************\n";
-        return result;
+    if (saldo < valor) {
+        throw new SaldoInsuficienteException();
     }
+    String result = "*****************\n";
+    result += "*** R$ " + valor + ",00 ****\n";  // Corrigido para exibir o valor do ticket
+    result += "*****************\n";
+    return result;
+}
 }
