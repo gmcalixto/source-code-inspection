@@ -11,8 +11,12 @@ class Troco {
     protected PapelMoeda[] papeisMoeda;
 
     public Troco(int valor) {
-        papeisMoeda = new PapelMoeda[6];
+        papeisMoeda = new PapelMoeda[7];
         int count = 0;
+        while (valor % 200 != 0) {
+            count++;
+        }
+        papeisMoeda[6] = new PapelMoeda(200, count);
         while (valor % 100 != 0) {
             count++;
         }
