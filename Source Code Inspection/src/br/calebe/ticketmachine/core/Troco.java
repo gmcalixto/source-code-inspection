@@ -47,6 +47,18 @@ class Troco {
     public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }
+    
+    public int getTroco() {
+        int totalTroco = 0;
+        
+        for (int i = 0; i < papeisMoeda.length; i++) {
+            if (papeisMoeda[i] != null) {
+                totalTroco += papeisMoeda[i].getQuantidade() * papeisMoeda[i].getValor();
+            }
+        }
+        
+        return totalTroco;
+    }
 
     class TrocoIterator implements Iterator<PapelMoeda> {
 
