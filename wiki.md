@@ -30,6 +30,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 ||
 |--------------------|
 | Fluxo Principal |
+
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente insere uma nota de papel-moeda.         |    |
@@ -42,6 +43,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 ||
 |--------------------|
 | Fluxo De Exceção |
+
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Sistema não valida a nota de papel-moeda.       |                                                                                      |
@@ -68,6 +70,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 ||
 |--------------------|
 | Fluxo Principal |
+
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente insere uma nota de papel-moeda.         |                                                                                      |
@@ -77,6 +80,7 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 ||
 |--------------------|
 | Fluxo De Exceção |
+
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 |                                                      | 1. O Sistema informa que o saldo é insuficiente. |
@@ -101,6 +105,7 @@ de papel-moeda.   |
 ||
 |--------------------|
 | Fluxo Principal |
+
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente solicita devolução do saldo restante como troco.        |                                                                                      |
