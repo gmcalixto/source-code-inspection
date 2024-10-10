@@ -27,6 +27,9 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 | Pontos de Inclusão | N/D                                                                                                                                              |
 | Pontos de Extensão | N/D                                                                                                                                              |
 
+||
+|--------------------|
+| Fluxo Principal |
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente insere uma nota de papel-moeda.         |    |
@@ -36,6 +39,9 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 |                                                      | 5. O Sistema informa que a nota de papel-moeda foi aceita.                           |
 |                                                      | 6. O Sistema informa o saldo atual. Caso de Uso é encerrado.                         |
 
+||
+|--------------------|
+| Fluxo De Exceção |
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Sistema não valida a nota de papel-moeda.       |                                                                                      |
@@ -59,13 +65,18 @@ As estações de trem frequentemente fornecem máquinas de vender bilhetes que i
 | Pontos de Inclusão | N/D                                                                                                                                              |
 | Pontos de Extensão | N/D                                                                                                                                              |
 
+||
+|--------------------|
+| Fluxo Principal |
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente insere uma nota de papel-moeda.         |                                                                                      |
 |                                                      | 2. O Sistema verifica o saldo e emite o bilhete.                                     |
 |                                                      | 3. O sistema informa o saldo atual. Caso de Uso é encerrado.                         |
 
-
+||
+|--------------------|
+| Fluxo De Exceção |
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 |                                                      | 1. O Sistema informa que o saldo é insuficiente. |
@@ -87,7 +98,9 @@ de papel-moeda.   |
 | Pontos de Extensão | N/D       
 
 
-
+||
+|--------------------|
+| Fluxo Principal |
 | **Ações do Ator**                                    | **Ações do Sistema**                                                                 |
 |------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 1. O Cliente solicita devolução do saldo restante como troco.        |                                                                                      |
