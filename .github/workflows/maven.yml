@@ -25,12 +25,12 @@ jobs:
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: todos_os_testes
 
     - name: Checkout pom.xml from other branch
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: todos_os_testes
     
