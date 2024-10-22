@@ -10,9 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "testes_com_ticket_e_papelMoeda" ]
+    branches: [ "todos_os_testes" ]
   pull_request:
-    branches: [ "testes_com_ticket_e_papelMoeda" ]
+    branches: [ "todos_os_testes" ]
 
 jobs:
   build:
