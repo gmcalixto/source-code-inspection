@@ -64,8 +64,7 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i--) {
-                 System.out.println("sdfdf");
+            for (int i = 5; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
@@ -76,7 +75,7 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = new PapelMoeda(0, 0);
-            for (int i = 6; i >= 0 && ret != null; i--) {
+            for (int i = 5; i >= 0 && ret != null; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
