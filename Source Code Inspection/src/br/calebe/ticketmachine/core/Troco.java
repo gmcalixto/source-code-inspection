@@ -16,7 +16,7 @@ class Troco {
 
         //pegar modeda 100
         while (valor >=100) {
-            valor = valor - 100
+            valor = valor - 100;
             count++;
 
 
@@ -27,7 +27,7 @@ class Troco {
 
         //pegar moeda 50
         while (valor >=50 ) {
-            valor = valor - 50
+            valor = valor - 50;
             count++;
         }
         papeisMoeda[4] = new PapelMoeda(50, count);
@@ -35,7 +35,7 @@ class Troco {
 
         //pegar moeda 20
         while (valor >=20) {
-            valor = valor - 20
+            valor = valor - 20;
             count++;
         }
 
@@ -44,19 +44,19 @@ class Troco {
         count = 0;
         //pegar moeda 10
         while (valor >=10) {
-            valor = valor - 10
+            valor = valor - 10;
             count++;
         }
         papeisMoeda[2] = new PapelMoeda(10, count);
         count = 0;
         while (valor >=5) {
-            valor = valor - 5
+            valor = valor - 5;
             count++;
         }
         papeisMoeda[1] = new PapelMoeda(5, count);
         count = 0;
         while (valor >=2) {
-            valor = valor - 2
+            valor = valor - 2;
 
 
             count++;
@@ -79,6 +79,10 @@ class Troco {
         @Override
         public boolean hasNext() {
             //arruma for 1
+            if (troco.papeisMoeda == null) {
+                return false; // Caso não Haja Moedas.
+            }
+
             for (int i = 6; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
@@ -91,10 +95,11 @@ class Troco {
         public PapelMoeda next() {
             PapelMoeda ret = null;
             //arruma for 2
-            for (int i = 6; i >= 0 && ret != null; i--) {
+            for (int i = 6; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
+                    break; //sai do for quando encontrar a moeda
                 }
             }
             return ret;
