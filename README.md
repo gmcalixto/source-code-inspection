@@ -18,7 +18,7 @@
 
 ## Data de Entrega
 
-📅 **Segunda-feira, 01/09**
+📅 **Terça-feira, 02/09**
 
 ---
 
